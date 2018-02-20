@@ -9757,6 +9757,9 @@ body {
   overflow-x: hidden;
   color: white; }
 
+.logo-font {
+  font-family: "Old Standard TT", serif; }
+
 a {
   color: #fff; }
   a:hover {
@@ -9782,7 +9785,11 @@ a {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
-  z-index: -99999; }
+  z-index: -99999;
+  background-image: url("../img/warn-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .h-line {
   width: 2px;
@@ -9836,7 +9843,14 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   height: 400px;
-  width: 70%; }
+  width: 100%; }
+
+.nav-logotype {
+  background-image: url("../img/logotyp.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 3rem;
+  width: 10%; }
 
 .offer {
   padding: 100px 0 100px 0;
@@ -9915,7 +9929,13 @@ i.border-circle-big {
     display: none; }
 
   .logo-big {
-    height: 200px; }
+    display: none; }
 
   header.header-bg {
-    padding: 25% 0 25% 0; } }
+    padding: 25% 0 25% 0; }
+
+  h3 {
+    font-size: 1.5rem; }
+
+  nav.navbar.fixed-top {
+    padding: 30px 0 0 0; } }
