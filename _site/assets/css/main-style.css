@@ -9763,31 +9763,39 @@ a {
     text-decoration: none;
     color: #a01d21; }
 
+.nav-content {
+  width: 66%; }
+
 .container-fluid {
   width: 100vw; }
 
 .logo-big {
-  background-image: url("../img/logo-big.png");
+  background-image: url("../img/logo-com.svg");
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: cover;
-  height: 30vh;
+  background-position: center;
+  height: 400px;
   width: 100%; }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -99999; }
+
+.h-line {
+  width: 2px;
+  background-color: #fff; }
+
 header.header-bg {
-  background-image: url("../img/intro-bg.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 100vh;
   width: 100vw;
-  padding: 10% 0 10% 0; }
-  header.header-bg h5 {
-    line-height: 180%;
-    color: #fff; }
+  padding: 5% 0 5% 0; }
+  header.header-bg .header-text {
+    line-height: 180%; }
   header.header-bg .header-content {
-    border-left: 2px solid #fff;
-    padding: 10px; }
+    width: 70%; }
 
 ul.navbar {
   list-style-type: none; }
@@ -9795,12 +9803,6 @@ ul.navbar {
     font-size: 1.2rem; }
     ul.navbar li .nav-link:hover {
       color: #a01d21; }
-
-.header-text {
-  line-height: 180%; }
-
-.start {
-  margin-top: 10%; }
 
 i.border-circle {
   border: 2px solid #a01d21;
@@ -9818,12 +9820,10 @@ i.border-circle {
 .about {
   background-color: black;
   padding: 100px 0 100px 0; }
-  .about h2 {
-    font-size: 3rem; }
   .about h4 {
     line-height: 170%; }
   .about .col-lg-6 {
-    border-right: 2px solid #fff; }
+    border-left: 2px solid #fff; }
 
 .v-line {
   border-top: 2px solid #fff; }
@@ -9844,8 +9844,6 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  .offer h2 {
-    font-size: 3rem; }
   .offer h4 {
     line-height: 170%; }
   .offer .col-xl-4 {
@@ -9857,14 +9855,12 @@ footer {
   background-color: #fff;
   color: black; }
   .offer-box .row {
-    font-size: 1.6rem;
     padding-bottom: 30px;
     border-bottom: 2px solid black; }
   .offer-box ul {
     margin-top: 5%;
     list-style-type: circle;
-    padding: 20px;
-    font-size: 1.3rem; }
+    padding: 20px; }
 
 i.border-circle-big {
   border: 2px solid #a01d21;
@@ -9882,7 +9878,6 @@ i.border-circle-big {
 
 .navbar.fixed-top {
   background-color: black;
-  height: 70px;
   -webkit-box-shadow: 0px 10px 62px -13px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 62px -13px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 62px -13px rgba(0, 0, 0, 0.75); }
@@ -9890,8 +9885,6 @@ i.border-circle-big {
 .contact {
   background-color: black;
   padding: 100px 0 100px 0; }
-  .contact h2 {
-    font-size: 3rem; }
   .contact h4 {
     line-height: 170%; }
 
@@ -9911,6 +9904,18 @@ i.border-circle-big {
   border: 2px solid #a01d21;
   padding: 5px 10px 5px 10px; }
 
-@media (max-width: 1200px) {
-  .offer .col-xl-4 {
-    padding: 10px 50px 10px 50px; } }
+@media (max-width: 1300px) {
+  header.header-bg .header-content {
+    width: 100%; }
+
+  .nav-content {
+    width: 100%; } }
+@media (max-width: 767px) {
+  .h-line {
+    display: none; }
+
+  .logo-big {
+    height: 200px; }
+
+  header.header-bg {
+    padding: 25% 0 25% 0; } }
